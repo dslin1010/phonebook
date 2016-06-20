@@ -3,7 +3,7 @@
 
 #define MAX_LAST_NAME_SIZE 16
 #define MAX_MEMORY_POOL_NODE 400000
-
+#define SIZE 5381
 
 #define OPT 3
 typedef struct __PHONE_BOOK_ENTRY {
