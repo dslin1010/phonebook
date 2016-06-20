@@ -43,7 +43,6 @@ int main(void)
         opt_sum_a += opt_a;
         opt_sum_f += opt_f;
     }
-    <<<<<<< HEAD
     fclose(fp);
     /*opt 2 hashing*/
     fp = fopen("hash.txt", "r");
@@ -88,10 +87,7 @@ int main(void)
     }
     fprintf(output, "append() %lf %lf %lf %lf \n",orig_sum_a / 100.0, opt_sum_a / 100.0, hash_sum_a / 100.0, mempool_sum_a / 100.0);
     fprintf(output, "findName() %lf %lf %lf %lf \n", orig_sum_f / 100.0, opt_sum_f / 100.0, hash_sum_f/ 100.0, mempool_sum_f/ 100.0);
-    =======
-        fprintf(output, "append() %lf %lf\n",orig_sum_a / 100.0, opt_sum_a / 100.0);
-    fprintf(output, "findName() %lf %lf", orig_sum_f / 100.0, opt_sum_f / 100.0);
-    >>>>>>> parent of 418abfb... add hash funtion and shrink entry size
+
     fclose(output);
     fclose(fp);
     return 0;
